@@ -13,6 +13,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-sm: 24rem;
     --container-md: 28rem;
     --container-lg: 32rem;
     --container-xl: 36rem;
@@ -299,6 +300,9 @@
   }
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
+  }
+  .bottom-\[-100px\] {
+    bottom: -100px;
   }
   .-left-20 {
     left: calc(var(--spacing) * -20);
@@ -597,6 +601,9 @@
   .w-\[27px\] {
     width: 27px;
   }
+  .w-\[125px\] {
+    width: 125px;
+  }
   .w-\[170px\] {
     width: 170px;
   }
@@ -738,6 +745,9 @@
   .max-w-md {
     max-width: var(--container-md);
   }
+  .max-w-sm {
+    max-width: var(--container-sm);
+  }
   .max-w-xl {
     max-width: var(--container-xl);
   }
@@ -824,6 +834,9 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-14 {
     gap: calc(var(--spacing) * 14);
@@ -965,6 +978,9 @@
   .border-\[\#dbe6f7\] {
     border-color: #dbe6f7;
   }
+  .border-\[\#dce3ec\] {
+    border-color: #dce3ec;
+  }
   .border-\[\#dce3fa\] {
     border-color: #dce3fa;
   }
@@ -1006,6 +1022,9 @@
   }
   .bg-\[\#192944\] {
     background-color: #192944;
+  }
+  .bg-\[\#ddf1ec\] {
+    background-color: #ddf1ec;
   }
   .bg-\[\#eaf0fb\] {
     background-color: #eaf0fb;
@@ -1316,6 +1335,10 @@
     --tw-tracking: -0.8px;
     letter-spacing: -0.8px;
   }
+  .tracking-\[1px\] {
+    --tw-tracking: 1px;
+    letter-spacing: 1px;
+  }
   .tracking-tight {
     --tw-tracking: var(--tracking-tight);
     letter-spacing: var(--tracking-tight);
@@ -1389,6 +1412,9 @@
   }
   .text-\[\#688282\] {
     color: #688282;
+  }
+  .text-\[\#698181\] {
+    color: #698181;
   }
   .text-\[\#789092\] {
     color: #789092;
@@ -1922,6 +1948,9 @@
     .md\:pt-7 {
       padding-top: calc(var(--spacing) * 7);
     }
+    .md\:pt-12 {
+      padding-top: calc(var(--spacing) * 12);
+    }
     .md\:pb-0 {
       padding-bottom: 0px;
     }
@@ -2019,11 +2048,23 @@
     .lg\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
     .lg\:grid-cols-5 {
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
+    .lg\:flex-row {
+      flex-direction: row;
+    }
     .lg\:flex-nowrap {
       flex-wrap: nowrap;
+    }
+    .lg\:items-center {
+      align-items: center;
+    }
+    .lg\:justify-between {
+      justify-content: space-between;
     }
     .lg\:gap-3 {
       gap: calc(var(--spacing) * 3);
@@ -2060,6 +2101,9 @@
     }
     .lg\:px-\[6\%\] {
       padding-inline: 6%;
+    }
+    .lg\:px-\[7\%\] {
+      padding-inline: 7%;
     }
     .lg\:px-\[9\%\] {
       padding-inline: 9%;
