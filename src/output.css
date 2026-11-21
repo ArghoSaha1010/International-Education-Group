@@ -36,6 +36,7 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --tracking-tight: -0.025em;
     --tracking-wide: 0.025em;
     --leading-tight: 1.25;
@@ -270,6 +271,9 @@
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
   }
+  .-left-20 {
+    left: calc(var(--spacing) * -20);
+  }
   .-left-28 {
     left: calc(var(--spacing) * -28);
   }
@@ -399,8 +403,14 @@
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -438,6 +448,9 @@
   .h-\[205px\] {
     height: 205px;
   }
+  .h-\[230px\] {
+    height: 230px;
+  }
   .h-\[240px\] {
     height: 240px;
   }
@@ -462,14 +475,23 @@
   .h-full {
     height: 100%;
   }
+  .max-h-9 {
+    max-height: calc(var(--spacing) * 9);
+  }
   .min-h-\[42px\] {
     min-height: 42px;
+  }
+  .min-h-\[240px\] {
+    min-height: 240px;
   }
   .min-h-\[350px\] {
     min-height: 350px;
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
+  }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
@@ -500,6 +522,9 @@
   }
   .w-\[205px\] {
     width: 205px;
+  }
+  .w-\[230px\] {
+    width: 230px;
   }
   .w-\[250px\] {
     width: 250px;
@@ -781,6 +806,9 @@
   .border-\[\#d6e1f8\] {
     border-color: #d6e1f8;
   }
+  .border-\[\#d9d9ff\] {
+    border-color: #d9d9ff;
+  }
   .border-\[\#d9dfff\] {
     border-color: #d9dfff;
   }
@@ -798,6 +826,12 @@
   }
   .border-\[\#e1e8fa\] {
     border-color: #e1e8fa;
+  }
+  .border-\[\#e5edf8\] {
+    border-color: #e5edf8;
+  }
+  .border-\[\#e7edf7\] {
+    border-color: #e7edf7;
   }
   .border-\[\#edf0f7\] {
     border-color: #edf0f7;
@@ -825,6 +859,9 @@
   }
   .bg-\[\#f1f5fc\] {
     background-color: #f1f5fc;
+  }
+  .bg-\[\#f2f6fc\] {
+    background-color: #f2f6fc;
   }
   .bg-\[\#f3f6fc\] {
     background-color: #f3f6fc;
@@ -1059,6 +1096,10 @@
     --tw-leading: 1.35;
     line-height: 1.35;
   }
+  .leading-\[1\.45\] {
+    --tw-leading: 1.45;
+    line-height: 1.45;
+  }
   .leading-\[1\.55\] {
     --tw-leading: 1.55;
     line-height: 1.55;
@@ -1083,6 +1124,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .tracking-\[-0\.3px\] {
     --tw-tracking: -0.3px;
     letter-spacing: -0.3px;
@@ -1094,6 +1139,10 @@
   .tracking-\[-0\.5px\] {
     --tw-tracking: -0.5px;
     letter-spacing: -0.5px;
+  }
+  .tracking-\[-0\.6px\] {
+    --tw-tracking: -0.6px;
+    letter-spacing: -0.6px;
   }
   .tracking-\[-0\.8px\] {
     --tw-tracking: -0.8px;
@@ -1161,6 +1210,9 @@
   .text-\[\#688282\] {
     color: #688282;
   }
+  .text-\[\#789092\] {
+    color: #789092;
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -1210,6 +1262,9 @@
       --tw-translate-y: calc(var(--spacing) * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
+    .hover\:border-\[\#4169ff\]\/40:hover {
+      border-color: color-mix(in oklab, #4169ff 40%, transparent);
+    }
     .hover\:border-\[\#7953ed\]:hover {
       border-color: #7953ed;
     }
@@ -1218,6 +1273,9 @@
     }
     .hover\:bg-white:hover {
       background-color: var(--color-white);
+    }
+    .hover\:text-\[\#1c2c49\]:hover {
+      color: #1c2c49;
     }
     .hover\:text-\[\#4169ff\]:hover {
       color: #4169ff;
@@ -1240,6 +1298,10 @@
     }
     .hover\:shadow-md:hover {
       --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    .hover\:shadow-sm:hover {
+      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
     .hover\:\[animation-play-state\:paused\]:hover {
@@ -1660,6 +1722,9 @@
     .lg\:flex-nowrap {
       flex-wrap: nowrap;
     }
+    .lg\:gap-3 {
+      gap: calc(var(--spacing) * 3);
+    }
     .lg\:gap-5 {
       gap: calc(var(--spacing) * 5);
     }
@@ -1671,6 +1736,9 @@
     }
     .lg\:p-9 {
       padding: calc(var(--spacing) * 9);
+    }
+    .lg\:px-6 {
+      padding-inline: calc(var(--spacing) * 6);
     }
     .lg\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
