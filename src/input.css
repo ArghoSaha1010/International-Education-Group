@@ -499,7 +499,7 @@
     position: absolute;
     width: 170px;
     height: 270px;
-    left: -100px;
+    left: -100;
     bottom: -40px;
     background: #f3f6fc;
     border-radius: 50%;

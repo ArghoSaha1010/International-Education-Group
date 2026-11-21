@@ -146,4 +146,14 @@ header {
     height: 65px;
     background-color: white;
 }
-
+.left-decoration {
+    position: absolute;
+    width: 170px;
+    height: 270px;
+    left: -100px;
+    bottom: -40px;
+    background: #f3f6fc;
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
