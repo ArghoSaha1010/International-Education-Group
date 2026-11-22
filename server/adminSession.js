@@ -8,7 +8,7 @@ function cookieOptions(config, maxAge = getSessionDurationMs(config)) {
   return {
     httpOnly: true,
     secure: config.nodeEnv === 'production',
-    sameSite: 'lax',
+    sameSite: config.nodeEnv === 'production' ? 'none' : 'lax',
     path: '/api/admin',
     maxAge,
   };
